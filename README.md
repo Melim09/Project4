@@ -1,8 +1,8 @@
-# Project4
+# Project4: Genome-based SARS-CoV-2 incidence estimation and case ascertainment
 
 Melika & Sid
 
-Below is an overview of the Steps in order to replicate the results of the project:
+Below is an overview of the Steps in order to replicate the analysis results of the project:
 ---
 
 ## 1. Installation:
@@ -24,7 +24,7 @@ Below is an overview of the Steps in order to replicate the results of the proje
   - https://drive.google.com/file/d/18UCfhpLJQQiDHWg2Eyv-HUTWsQ4p7SQj/view?usp=sharing (India sequences)
   - https://drive.google.com/file/d/1zVoPcCPlshpmHDyxSzkIrWjQpt5Reelr/view?usp=sharing (Metadata for India sequences)
 
-## 3. Data Analyses:
+## 3. Data Analysis:
 
 ### Germany
 1. Store dates of sequences 
