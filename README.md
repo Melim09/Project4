@@ -5,13 +5,13 @@ Melika & Sid
 Below is an overview of the Steps in order to replicate the results of the project. 
 ---
 
-### 1. Installation:
+## 1. Installation:
 
 - Install GInPipe: https://github.com/KleistLab/GInPipe
 - Install covsonar: https://github.com/rki-mf1/covsonar
 
 
-### 2. Data Download:
+## 2. Data Download:
 
 - Download to Germany folder:
   - https://osf.io/hxk5m (Germany sequences and daily cases)
@@ -21,18 +21,19 @@ Below is an overview of the Steps in order to replicate the results of the proje
   - https://osf.io/jptkw (France weekly cases)
 
 - Download to India folder
-  - (India sequences)
+  - https://drive.google.com/file/d/18UCfhpLJQQiDHWg2Eyv-HUTWsQ4p7SQj/view?usp=sharing (India sequences)
 
-### 3. Data Analyses:
+## 3. Data Analyses:
 
-Germany
+### Germany
 - Run "Germany Daily Sequences Histogram" in DataExploration.ipynb
-- `cd Germany`
-- Change config_Germany.yaml to match paths (if necessary)
-- `mamba activate ../envs/GInPipe3/`
-- `snakemake --snakefile ../GInPipe/GInPipe --configfile config_Germany.yaml -j`
+```
+cd Germany
+mamba activate ../envs/GInPipe3/
+snakemake --snakefile ../GInPipe/GInPipe --configfile config_Germany.yaml -j
+```
 
-France
+### France
 - `cd France`
 - `mamba activate ../envs/sonar/`
 - `python ../covsonar/sonar.py match --db project4.db --date 2022-01-01:2022-06-30 --collection FRANCE > sequences_France_220101_220630.csv`
@@ -42,7 +43,7 @@ France
 - `mamba activate ../envs/GInPipe3/`
 - `snakemake --snakefile ../GInPipe/GInPipe --configfile config_France.yaml -j`
 
-Spain
+### Spain
 - `cd Spain`
 - `mamba activate ../envs/sonar/`
 - `python ../covsonar/sonar.py match --db ../France/project4.db --date 2022-01-01:2022-06-30 --collection SPAIN > sequences_Spain_220101_220630.csv`
@@ -52,7 +53,7 @@ Spain
 - `mamba activate ../envs/GInPipe3/`
 - `snakemake --snakefile ../GInPipe/GInPipe --configfile config_Spain.yaml -j`
   
-India
+### India
 - `cd India`
 - `mamba activate ../envs/sonar/`
 - Recommended to run on HPC: `python ../covsonar/sonar.py add -f sequences_India_220101_220630.fasta --db India2022 --cpus 32`
