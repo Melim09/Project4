@@ -30,7 +30,7 @@ Below is an overview of the Steps in order to replicate the results of the proje
 1. Store dates of sequences 
 ```
 cd Germany
-cut -d ',' -f16 sequences_Germany_220101_220630.csv > dates_sequences_Germany_220101_220630.csv
+cut -d ',' -f1 sequences_Germany_220101_220630.csv > dates_sequences_Germany_220101_220630.csv
 ```
 2. Run `Germany Daily Sequences Histogram` section in DataExploration.ipynb
 3. Run GInPipe
