@@ -2,7 +2,7 @@
 
 Melika & Sid
 
-Below is an overview of the Steps in order to replicate the results of the project. 
+Below is an overview of the Steps in order to replicate the results of the project:
 ---
 
 ## 1. Installation:
@@ -32,7 +32,7 @@ Below is an overview of the Steps in order to replicate the results of the proje
 cd Germany
 cut -d ',' -f16 sequences_Germany_220101_220630.csv > dates_sequences_Germany_220101_220630.csv
 ```
-2. Run "Germany Daily Sequences Histogram" in DataExploration.ipynb
+2. Run `Germany Daily Sequences Histogram` section in DataExploration.ipynb
 3. Run GInPipe
 ```
 mamba activate ../envs/GInPipe3/
@@ -47,8 +47,8 @@ mamba activate ../envs/sonar/
 python ../covsonar/sonar.py match --db project4.db --date 2022-01-01:2022-06-30 --collection FRANCE > sequences_France_220101_220630.csv
 cut -d ',' -f16 sequences_France_220101_220630.csv > dates_sequences_France_220101_220630.csv
 ```
-2. Run "France Daily Sequences Histogram" in DataExploration.ipynb
-3. Run "France Daily Estimation" in DataExploration.ipynb
+2. Run `France Daily Sequences Histogram` section in DataExploration.ipynb
+3. Run `France Daily Estimation` section in DataExploration.ipynb
 4. Run GInPipe
 ```
 mamba activate ../envs/GInPipe3/
@@ -63,8 +63,8 @@ mamba activate ../envs/sonar/
 python ../covsonar/sonar.py match --db ../France/project4.db --date 2022-01-01:2022-06-30 --collection SPAIN > sequences_Spain_220101_220630.csv
 cut -d ',' -f16 sequences_Spain_220101_220630.csv > dates_sequences_Spain_220101_220630.csv
 ```
-2. Run "Spain Daily Sequences Histogram" in DataExploration.ipynb
-3. Run "Spain Daily Estimate" in DataExploration.ipynb
+2. Run `Spain Daily Sequences Histogram` section in DataExploration.ipynb
+3. Run `Spain Daily Estimate` section in DataExploration.ipynb
 4. Run GInPipe
 ```
 mamba activate ../envs/GInPipe3/
@@ -80,8 +80,8 @@ python ../covsonar/sonar.py add -f sequences_India_220101_220630.fasta --db Indi
 python ../covsonar/sonar.py match --db India2022 --date 2022-01-01:2022-06-30  > sequences_India_220101_220630.csv
 cut -d ',' -f16 sequences_India_220101_220630.csv > dates_sequences_India_220101_220630.csv
 ```
-2. Run `India Daily Sequences Histogram` in DataExploration.ipynb
-3. Run "India Daily Estimate" in DataExploration.ipynb
+2. Run `India Daily Sequences Histogram` section in DataExploration.ipynb
+3. Run `India Daily Estimate` section in DataExploration.ipynb
 4. Run GInPipe
 ```
 mamba activate ../envs/GInPipe3/
