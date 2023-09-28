@@ -26,7 +26,7 @@ smoothing_bandwidth_phi: 7
 # 1/22/20: "%m/%d/%y"
 # 22-01-2020: "%d-%m-%Y"
 # 2020-02-24T18:00:00: "%Y-%m-%dT%H:%M:%S"
-reported_cases: ["reported_cases_Germany_220101_220630.csv",",","date","new_confirmed","%Y-%m-%d"]
+reported_cases: ["reported_cases_Germany_220101_220630.csv",",","date","newCases","%Y-%m-%d"]
 # Smoothing bandwidth for reported cases (optional, default = 7)
 smoothing_bandwidth_mi: 7
 # Write and plot results from date in format YYY-MM-DD (optional)
