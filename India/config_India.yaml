@@ -1,7 +1,7 @@
 # Full path to samples, either to raw fasta file (including collection date in header) or covSonar like output in csv format containing date and SNVs
 samples: "sequences_India_220101_220630.csv"
 # Sample name for plot grouping, e.g. country or data set name (optional. If not given, taking sample name form above)
-name: "France"
+name: "India"
 # Full path to reference sequence file in FASTA format (only necessary if fasta files are given)
 reference: "path/to/reference_fasta"
 # Number of sequences per bin for binning mode with equally sized bins
