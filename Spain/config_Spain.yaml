@@ -5,7 +5,7 @@ name: "Spain"
 # Full path to reference sequence file in FASTA format (only necessary if fasta files are given)
 reference: "path/to/reference_fasta"
 # Number of sequences per bin for binning mode with equally sized bins
-seq_per_bin: [100,500,1000]
+seq_per_bin: [25,50,100,500]
 # Number of days per bin for binning mode with equal amount of calendar days
 days_per_bin: [7,10,30]
 # Minimal bin size - some fraction of big bin file (optional, default = 100)
